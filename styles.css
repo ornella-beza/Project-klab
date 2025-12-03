@@ -25,9 +25,7 @@ body {
 .logo {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color: #475350;
-    font-weight: 700;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
 }
 
 .logo-name {
@@ -48,7 +46,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color: #475350;
+    color: #333;
     text-decoration: none;
     padding: 8px 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -347,6 +345,215 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.blog-filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: #f2b263;
+    color: #475350;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.filter-btn.active {
+    background-color: #86a69d;
+    color: white;
+    border-color: #759488;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px;
+    margin-bottom: 60px;
+}
+
+.blog-card {
+    background-color: #f2b263;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blog-card.visible {
+    animation: fadeIn 0.3s ease;
+}
+
+.blog-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.blog-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #475350;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.blog-category-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.blog-category-tag.networking {
+    background-color: #86a69d;
+    color: white;
+}
+
+.blog-category-tag.web {
+    background-color: #d4a574;
+    color: white;
+}
+
+.blog-category-tag.security {
+    background-color: #c9827d;
+    color: white;
+}
+
+.blog-category-tag.learning {
+    background-color: #8fa999;
+    color: white;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #486960;
+}
+
+.blog-date {
+    font-family: 'Podkova', serif;
+    font-weight: 600;
+}
+
+.blog-read-time {
+    font-family: 'Podkova', serif;
+    font-weight: 600;
+}
+
+.blog-excerpt {
+    font-family: 'Podkova', serif;
+    font-size: 16px;
+    color: #486960;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.blog-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.blog-tag {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #475350;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.blog-read-more {
+    color: #86a69d;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.blog-read-more:hover {
+    color: #759488;
+    transform: translateX(4px);
+}
+
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 60px;
+}
+
+.pagination-btn {
+    background-color: #f2b263;
+    color: #475350;
+    padding: 10px 14px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #86a69d;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.pagination-btn.active {
+    background-color: #86a69d;
+    color: white;
+    border-color: #759488;
+}
+
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -596,6 +803,49 @@ body {
         padding: 5px 10px;
     }
 
+    .blog-filters {
+        gap: 8px;
+        margin-bottom: 35px;
+    }
+
+    .filter-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .blog-card {
+        padding: 20px;
+    }
+
+    .blog-card-title {
+        font-size: 18px;
+    }
+
+    .blog-category-tag {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .blog-excerpt {
+        font-size: 14px;
+    }
+
+    .blog-pagination {
+        gap: 8px;
+        margin-top: 40px;
+    }
+
+    .pagination-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
     .page-title,
     .section-title {
         font-size: 28px;
@@ -705,6 +955,75 @@ body {
     .page-title {
         font-size: 22px;
         margin-bottom: 25px;
+    }
+
+    .blog-filters {
+        gap: 6px;
+        margin-bottom: 25px;
+    }
+
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+    .blog-card {
+        padding: 16px;
+    }
+
+    .blog-card-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .blog-card-title {
+        font-size: 16px;
+    }
+
+    .blog-category-tag {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .blog-meta {
+        gap: 12px;
+        font-size: 12px;
+    }
+
+    .blog-excerpt {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .blog-tags {
+        gap: 6px;
+        margin-bottom: 15px;
+    }
+
+    .blog-tag {
+        padding: 3px 8px;
+        font-size: 11px;
+    }
+
+    .blog-read-more {
+        font-size: 12px;
+    }
+
+    .blog-pagination {
+        gap: 6px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .pagination-btn {
+        padding: 6px 10px;
+        font-size: 11px;
     }
 
     .hero-section {
