@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beza Ornella - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Podkova:400,700,600|Poppins:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <span class="logo-name">Beza Ornella</span>
-                <span class="logo-suffix"> /Portfolio</span>
-            </div>
-            <nav class="nav">
-                 <a href="index.html" class="nav-item">HOME</a>
-                <a href="portfolio.html" class="nav-item">PORTFOLIO</a>
-                <a href="about.html" class="nav-item">ABOUT</a>
-                <a href="skills.html" class="nav-item">SKILLS</a>
-                <a href="blog.html" class="nav-item active">BLOG</a>
-                <a href="contact.html" class="nav-item">CONTACT</a>
-            </nav>
-        </header>
+    <nav class="fixed-nav">
+        <a href="#home" class="logo">
+            <div class="logo-icon">SBO</div>
+            <span class="logo-name">Beza Ornella</span>
+            <span class="logo-suffix"> /Portfolio</span>
+        </a>
+        <div class="nav-links">
+            <a href="#home" class="nav-item active">HOME</a>
+            <a href="#portfolio" class="nav-item">PORTFOLIO</a>
+            <a href="#about" class="nav-item">ABOUT</a>
+            <a href="#skills" class="nav-item">SKILLS</a>
+            <a href="#blog" class="nav-item">BLOG</a>
+            <a href="#contact" class="nav-item">CONTACT</a>
+        </div>
+    </nav>
 
-        <main class="main-content">
-            <section class="hero-section">
+    <!-- HOME SECTION -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="hero-section">
                 <div class="hero-image"></div>
                 <div class="hero-text">
                     <div class="hero-content">
@@ -34,10 +38,10 @@
                         Networking student at University of Lay Adventists of Kigali (UNILAK) with a passion for technology and continuous learning.</strong>
                     </div>
                 </div>
-                <a href="contact.html" class="hero-button">LET'S TALK</a>
-            </section>
+                <a href="#contact" class="hero-button">LET'S TALK</a>
+            </div>
 
-            <section class="hobbies-section">
+            <div class="hobbies-section">
                 <h2 class="section-title">MY HOBBIES</h2>
                 <div class="hobbies-grid">
                     <div class="hobby-card">
@@ -53,8 +57,441 @@
                         <p class="hobby-description">I enjoy watching films that inspire creativity and broaden my understanding of storytelling.</p>
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h1 class="page-title">MY PORTFOLIO</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <img src="public/community_help.png" alt="Community Help Platform" class="portfolio-image">
+                    <h3 class="portfolio-card-title">Community Help</h3>
+                    <p class="portfolio-card-description">Connecting communities through verified assistance and real-time support</p>
+                    
+                    <div class="tech-stack">
+                        <h4 class="tech-title">Built with:</h4>
+                        <div class="tech-icons">
+                            <div class="tech-item">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-tailwindcss-plain colored"></i>
+                                <span>TailwindCSS</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-firebase-plain colored"></i>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-tags">
+                        <span class="tag">Community</span>
+                        <span class="tag">Real-time</span>
+                        <span class="tag">Support</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/ornella-beza/Community-Help-Platform" target="_blank" class="portfolio-link">
+                            <i class="devicon-github-original"></i>
+                            GitHub
+                        </a>
+                        <a href="https://community-help-platform-beta.vercel.app/" target="_blank" class="portfolio-link">Live Demo</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="public/Finance_managent.png" alt="Finance Management" class="portfolio-image">
+                    <h3 class="portfolio-card-title">Finance Management</h3>
+                    <p class="portfolio-card-description">A personal finance tracker application built with Vanilla JavaScript, HTML, CSS, and Firebase.</p>
+                    
+                    <div class="tech-stack">
+                        <h4 class="tech-title">Built with:</h4>
+                        <div class="tech-icons">
+                            <div class="tech-item">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-firebase-plain colored"></i>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Finance</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/ornella-beza/Finance-Management" target="_blank" class="portfolio-link">
+                            <i class="devicon-github-original"></i>
+                            GitHub
+                        </a>
+                        <a href="https://finance-management-nu-murex.vercel.app/" target="_blank" class="portfolio-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="container">
+            <h1 class="page-title">ABOUT ME</h1>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3 class="about-subtitle">Education</h3>
+                    <p class="about-text">
+                        Currently pursuing a degree in Networking at the University of Lay Adventists of Kigali (UNILAK).
+                        My studies focus on network architecture, security protocols, and modern infrastructure design.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h3 class="about-subtitle">Background</h3>
+                    <p class="about-text">
+                        I am passionate about technology and its potential to solve real-world problems. My journey in
+                        networking began with a curiosity about how systems communicate and has grown into a dedication
+                        to building secure, efficient network solutions.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h3 class="about-subtitle">Philosophy</h3>
+                    <p class="about-text">
+                        I believe in continuous learning and staying updated with the latest technological advancements.
+                        My approach combines technical expertise with creative problem-solving to deliver innovative solutions.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h3 class="about-subtitle">Goals</h3>
+                    <p class="about-text">
+                        My goal is to become a skilled network engineer who can design and implement robust network
+                        infrastructures. I am committed to contributing to the technology sector and making a positive
+                        impact through my work.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h1 class="page-title">MY SKILLS</h1>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Networking</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Network Design & Architecture</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Cisco Technologies</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Network Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TCP/IP Protocols</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Web Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML & CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Web Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Tools & Software</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Cisco Packet Tracer</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Wireshark</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Network Monitoring Tools</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="skills-category-title">Soft Skills</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-badge">Problem Solving</div>
+                        <div class="soft-skill-badge">Team Collaboration</div>
+                        <div class="soft-skill-badge">Communication</div>
+                        <div class="soft-skill-badge">Time Management</div>
+                        <div class="soft-skill-badge">Continuous Learning</div>
+                        <div class="soft-skill-badge">Attention to Detail</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h1 class="page-title">MY BLOG</h1>
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="networking">Networking</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="learning">Learning</button>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card" data-category="networking">
+                    <div class="blog-card-header">
+                        <h2 class="blog-card-title">Understanding Network Protocols</h2>
+                        <span class="blog-category-tag networking">Networking</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span class="blog-date">December 1, 2024</span>
+                        <span class="blog-read-time">5 min read</span>
+                    </div>
+                    <p class="blog-excerpt">
+                        Dive deep into the fundamentals of network protocols. Learn how TCP/IP works, the importance of the OSI model, and how modern networks communicate efficiently and securely.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">TCP/IP</span>
+                        <span class="blog-tag">Protocols</span>
+                        <span class="blog-tag">OSI Model</span>
+                    </div>
+                    <a href="#" class="blog-read-more">Read More →</a>
+                </article>
+
+                <article class="blog-card" data-category="web">
+                    <div class="blog-card-header">
+                        <h2 class="blog-card-title">Building Responsive Web Design</h2>
+                        <span class="blog-category-tag web">Web Dev</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span class="blog-date">November 28, 2024</span>
+                        <span class="blog-read-time">7 min read</span>
+                    </div>
+                    <p class="blog-excerpt">
+                        Explore best practices for creating responsive websites that work seamlessly across all devices. From mobile-first design to CSS Grid and Flexbox techniques, master the essentials.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">HTML/CSS</span>
+                        <span class="blog-tag">Responsive</span>
+                        <span class="blog-tag">Design</span>
+                    </div>
+                    <a href="#" class="blog-read-more">Read More →</a>
+                </article>
+
+                <article class="blog-card" data-category="security">
+                    <div class="blog-card-header">
+                        <h2 class="blog-card-title">Network Security Best Practices</h2>
+                        <span class="blog-category-tag security">Security</span>
+                    </div>
+                    <div class="blog-meta">
+                        <span class="blog-date">November 25, 2024</span>
+                        <span class="blog-read-time">8 min read</span>
+                    </div>
+                    <p class="blog-excerpt">
+                        Comprehensive guide to securing your network infrastructure. Learn about firewalls, encryption, VPNs, and common vulnerabilities to protect your systems from threats.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Security</span>
+                        <span class="blog-tag">Firewall</span>
+                        <span class="blog-tag">Encryption</span>
+                    </div>
+                    <a href="#" class="blog-read-more">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h1 class="page-title">GET IN TOUCH</h1>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Let's Connect</h3>
+                    <p class="contact-text">
+                        I'm always interested in hearing about new opportunities, collaborations,
+                        or just having a conversation about technology and networking. Feel free to reach out!
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-header">
+                                <i class="fas fa-envelope contact-icon"></i>
+                                <h4 class="contact-method-title">Email</h4>
+                            </div>
+                            <p class="contact-method-value">ornellasimbibeza@gmail.com</p>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-method-header">
+                                <i class="fas fa-phone contact-icon"></i>
+                                <h4 class="contact-method-title">Phone</h4>
+                            </div>
+                            <p class="contact-method-value">+250786416374</p>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-method-header">
+                                <i class="fas fa-map-marker-alt contact-icon"></i>
+                                <h4 class="contact-method-title">Location</h4>
+                            </div>
+                            <p class="contact-method-value">Kigali, Rwanda</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Beza Ornella. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-item').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Update active nav item
+                document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Blog filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                document.querySelectorAll('.blog-card').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => card.classList.add('visible'), 10);
+                    } else {
+                        card.classList.remove('visible');
+                        setTimeout(() => card.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+
+        // Update active nav on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === `#${current}`) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
